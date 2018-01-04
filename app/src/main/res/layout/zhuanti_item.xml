@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="#69f9f3f3"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/zhuanti_img" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文本"
+        android:background="#92333332"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:padding="2dp"
+
+        android:id="@+id/zhuanti_text"
+        android:layout_alignBottom="@+id/zhuanti_img"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+</RelativeLayout>

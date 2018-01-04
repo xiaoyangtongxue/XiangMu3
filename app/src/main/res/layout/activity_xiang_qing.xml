@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:background="#00f"
+        android:id="@+id/xq_biaoti"
+    android:layout_height="50dp">
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/xq_back"
+        android:layout_centerVertical="true"
+        android:src="@drawable/menu_action_back"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文本"
+        android:textColor="#fff"
+        android:textSize="17dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/xq_title"/>
+</RelativeLayout>
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:layout_below="@+id/xq_biaoti"
+        android:id="@+id/jiecao_Player"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_blue"
+        android:layout_below="@+id/jiecao_Player"
+        android:layout_height="match_parent">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        app:tabGravity="center"
+        android:layout_centerHorizontal="true"
+        app:tabIndicatorColor="#0f0"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#0f0"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_pager"
+        android:layout_below="@+id/tl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

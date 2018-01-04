@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:id="@+id/tab_item_re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="导演"
+            android:id="@+id/daoyan"
+            android:textColor="#ccc"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="演员"
+            android:layout_below="@+id/daoyan"
+            android:id="@+id/yanyuan"
+            android:textColor="#ccc"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="简述"
+             android:textColor="#ccc"
+            android:visibility="gone"
+            android:layout_below="@+id/yanyuan"
+            android:id="@+id/jianshu"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="展开"
+            android:gravity="end"
+            android:textColor="#ccc"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/jianshu"
+            android:id="@+id/zhankai"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/xq_recyview"
+        android:layout_below="@+id/tab_item_re"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

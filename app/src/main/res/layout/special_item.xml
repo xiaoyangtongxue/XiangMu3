@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#1E90FF"
+        android:id="@+id/zhuanti_biaoti"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            android:layout_centerInParent="true"
+            android:text="专题"/>
+    </RelativeLayout>
+<android.support.v7.widget.RecyclerView
+    android:layout_margin="5dp"
+    android:layout_below="@+id/zhuanti_biaoti"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/special_re"
+    ></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

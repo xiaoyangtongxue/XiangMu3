@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_colorful"
+    >
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:background="#1E90FF"
+      android:id="@+id/zhuantixq_biaoti"
+      android:layout_height="50dp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentStart="true">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/menu_action_back"
+        android:layout_centerVertical="true"
+        android:id="@+id/zhuantixq_back"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="17dp"
+        android:id="@+id/zhuantixq_biaoti_text"
+        android:layout_centerInParent="true"
+        android:text="文本"/>
+  </RelativeLayout>
+  <android.support.v7.widget.RecyclerView
+      android:layout_below="@+id/zhuantixq_biaoti"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/zhuantixq_re"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>
